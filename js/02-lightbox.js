@@ -20,4 +20,6 @@ function createGallery(array) {
 };
 
 createGallery(galleryItems);
-const gallery = new SimpleLightbox('ul.gallery a');
+const gallery = new SimpleLightbox('ul.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250});
